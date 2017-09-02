@@ -11,7 +11,7 @@
           <router-link to="/dashboard" class="nav-link">Dashboard</router-link> 
         </li> 
         <li class="nav-item">
-          <router-link to="/flavor" class="nav-link">Link 2</router-link> 
+          <router-link to="/system-picker" class="nav-link">Link 2</router-link> 
         </li> 
         <li class="nav-item">
           <router-link to="/brand" exact class="nav-link">Link 3</router-link> 

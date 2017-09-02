@@ -1,13 +1,20 @@
 <template>
   <div>
+    <p>system picker</p>
+    <p>{{ systemNames }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'dashboard',
+  name: 'system-picker',
   data () {
     return {
+    }
+  },
+  computed: {
+    systemNames () {
+      return [1, 2, 3]
     }
   }
 }

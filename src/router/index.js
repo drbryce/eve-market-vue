@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Dashboard from '@/components/Dashboard'
 import Login from '@/components/Login'
 import Landing from '@/components/Landing'
+import SystemPicker from '@/components/SystemPicker'
 import { store } from '../store/store'
 
 Vue.use(Router)
@@ -23,7 +24,13 @@ export default new Router({
       path: '/dashboard',
       name: 'dashboard',
       component: Dashboard,
-      beforeEnter: (to, from, next) => checkLogged()
+      beforeEnter: (to, from, next) => checkLogged(to, from, next)
+    },
+    {
+      path: '/system-picker',
+      name: 'system-picker',
+      component: SystemPicker,
+      beforeEnter: (to, from, next) => checkLogged(to, from, next)
     }
   ],
   linkActiveClass: 'active'
